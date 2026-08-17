@@ -1,0 +1,20 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KORA PRO — مباريات اليوم</title><meta name="description" content="مباريات ونتائج وأخبار كرة القدم">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<div class="bg-orb one"></div><div class="bg-orb two"></div>
+<header class="header"><div class="header-inner"><a class="logo" href="index.html"><span>⚽</span>KORA <b>PRO</b></a>
+<nav><a class="active" href="index.html">الرئيسية</a><a href="#matches">المباريات</a><a href="leagues.html">البطولات</a><a href="#news">الأخبار</a></nav>
+<div class="head-actions"><button id="themeBtn" class="round">☾</button><a class="admin-link" href="admin.html">لوحة التحكم</a></div></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><div class="live-pill"><i></i> كرة القدم مباشرة</div><h1>كل مباريات اليوم<br><span>في مكان واحد</span></h1><p>نتائج مباشرة، مواعيد المباريات، البطولات وأحدث أخبار كرة القدم.</p><div class="hero-buttons"><a class="cta" href="#matches">شاهد المباريات <span>←</span></a><a class="ghost" href="leagues.html">استكشف البطولات</a></div></div>
+<div class="hero-visual"><div class="ring"></div><div class="ball">⚽</div><div class="floating-card"><b>LIVE</b><span>متابعة لحظية</span></div></div></section>
+<section class="quick"><div><strong id="matchCount">—</strong><span>مباراة اليوم</span></div><div><strong>24/7</strong><span>تحديث مستمر</span></div><div><strong>100+</strong><span>بطولة</span></div><div><strong>HD</strong><span>تجربة سريعة</span></div></section>
+<div class="toolbar"><div class="days"><button class="day" data-day="-1">أمس</button><button class="day active" data-day="0">اليوم</button><button class="day" data-day="1">غدًا</button></div><div class="search"><span>⌕</span><input id="search" placeholder="ابحث عن فريق أو بطولة..."></div><button id="refresh" class="refresh">↻ تحديث</button></div>
+<section id="matches" class="section"><div class="title-row"><div><small>LIVE CENTER</small><h2>مباريات اليوم</h2></div><span id="apiState" class="api-state">جاري التحميل...</span></div><div id="matchesBox"><div class="loading">جاري تحميل المباريات...</div></div></section>
+<section id="news" class="section"><div class="title-row"><div><small>FOOTBALL NEWS</small><h2>آخر الأخبار</h2></div><a href="#" class="more">المزيد ←</a></div><div id="newsBox" class="news-grid"></div></section>
+<section class="ad-banner"><div><small>مساحة إعلانية</small><b>إعلانك هنا</b><span>يمكنك إدارة الإعلانات من لوحة التحكم</span></div></section>
+</main><footer><div class="footer-brand">⚽ KORA <b>PRO</b></div><span>منصة معلومات رياضية مستقلة © 2026</span></footer>
+<script src="config.js"></script><script src="assets/app.js"></script></body></html>

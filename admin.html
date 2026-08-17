@@ -1,0 +1,53 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KORA PRO — لوحة التحكم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<div class="bg-orb one"></div><div class="bg-orb two"></div>
+<header class="header"><div class="header-inner"><a class="logo" href="index.html"><span>⚽</span>KORA <b>PRO</b></a>
+<nav><a href="index.html">الرئيسية</a><a href="index.html#matches">المباريات</a><a href="leagues.html">البطولات</a><a href="index.html#news">الأخبار</a></nav>
+<div class="head-actions"><button id="themeBtn" class="round">☾</button></div></div></header>
+<main>
+
+<div id="login" class="admin-wrap">
+    <div class="login-box">
+        <h2>تسجيل الدخول</h2>
+        <input id="adminPass" type="password" placeholder="كلمة المرور">
+        <button id="loginBtn" class="cta" style="width:100%;justify-content:center;margin-top:10px">دخول</button>
+        <small>كلمة المرور التجريبية: 1234</small>
+    </div>
+</div>
+
+<div id="dashboard" class="admin-wrap dashboard hidden">
+    <div class="dash-head">
+        <h2>لوحة التحكم</h2>
+        <button id="logoutBtn" class="logout">تسجيل الخروج</button>
+    </div>
+
+    <div class="admin-tabs">
+        <button class="tab active" data-tab="newsAdmin">الأخبار</button>
+        <button class="tab" data-tab="adsAdmin">الإعلانات</button>
+    </div>
+
+    <div id="newsAdmin" class="panel">
+        <h3>إضافة خبر جديد</h3>
+        <input id="newsTitle" placeholder="عنوان الخبر">
+        <input id="newsImage" placeholder="رابط الصورة (اختياري)">
+        <textarea id="newsText" placeholder="نص الخبر"></textarea>
+        <button id="saveNews" class="cta">حفظ الخبر</button>
+        <div id="adminNewsList"></div>
+    </div>
+
+    <div id="adsAdmin" class="panel hidden">
+        <h3>إضافة إعلان جديد</h3>
+        <input id="adTitle" placeholder="عنوان الإعلان">
+        <input id="adUrl" placeholder="رابط الإعلان (اختياري)">
+        <button id="saveAd" class="cta">حفظ الإعلان</button>
+        <div id="adminAdList"></div>
+    </div>
+</div>
+
+</main>
+<footer><div class="footer-brand">⚽ KORA <b>PRO</b></div><span>منصة معلومات رياضية مستقلة © 2026</span></footer>
+<script src="config.js"></script><script src="assets/app.js"></script></body></html>

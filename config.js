@@ -1,0 +1,1 @@
+window.KORA_CONFIG={API_KEY:"PUT_YOUR_API_FOOTBALL_KEY_HERE",API_BASE:"https://v3.football.api-sports.io",DEFAULT_LEAGUES:[39,140,135,78,2,3,1]};
